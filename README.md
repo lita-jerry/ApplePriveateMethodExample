@@ -1,7 +1,7 @@
 # iOS如何在不越狱的情况下,调用私有API
 iOS开发中，我们接触到的API都是苹果公开的，那么还有一些私有API是苹果不予公开的，这些私有API中，有很多公开API无法达到的功能，利用这些API可以实现很多黑魔法，最常见莫过于**[UIView recursiveDescription]**。这是一个神奇的方法，在API DOC是找不到的，功能是打印View的层次关系和View的Description，效果如下图：
 
-PS：一旦使用这些私有API，将不能上架AppStore，但是能够作为逆向开发很有价值的参考。
+PS：一旦显示的使用这些私有API，将不能上架AppStore，今后有时间可以聊一聊怎么规避审核，使用私有API的方法。
 
 使用常规调用方法
 ```objective-c
