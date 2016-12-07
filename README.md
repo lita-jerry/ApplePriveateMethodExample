@@ -29,6 +29,7 @@ PS：一旦显示的使用这些私有API，将不能上架AppStore，今后有�
 @end
 ```
 
+
 ### 利用Category调用私有API
 首先在main.m中添加ExampleClass的Category，声明ExampleClass.m中的私有方法
 ```objective-c
@@ -37,8 +38,9 @@ PS：一旦显示的使用这些私有API，将不能上架AppStore，今后有�
 @end
 ```
 这样即指向了该类的私有方法，变相的将私有方法“变”成了公开方法
-
+![代码参考Example01](https://github.com/JerryLoveRice/ApplePriveateMethodExample/blob/master/Source/Example1.png)
 代码参考Example01
+
 
 ### 利用Runtime调用私有API
 首先介绍两个方法：
@@ -52,10 +54,12 @@ if([ExampleClass respondsToSelector:@selector(privateMethod)]){
 	[ExampleClass performSelector:@selector(privateMethod)];
 }
 ```
-
-代码参考Example01
+![代码参考Example02](https://github.com/JerryLoveRice/ApplePriveateMethodExample/blob/master/Source/Example1.png)
+代码参考Example02
 
 套用如上两种方法，实现**[UIView recursiveDescription]**
+![代码参考RecursiveDescriptionDemo](https://github.com/JerryLoveRice/ApplePriveateMethodExample/blob/master/Source/demo.png)
+代码参考RecursiveDescriptionDemo
 
 ### 关于 @selector() 你需要知道的
 因为在 Objective-C 中，所有的消息传递中的“消息”都会被转换成一个 selector 作为 objc_msgSend 函数的参数：
