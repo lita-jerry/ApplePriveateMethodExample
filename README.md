@@ -10,7 +10,7 @@ PS：一旦显示的使用这些私有API，将不能上架AppStore，今后有�
 //.....
 ```
 编译器会报如下错误：
-++No visible @interface for 'UIView' declares the selector 'recursiveDescription'++
+“No visible @interface for 'UIView' declares the selector 'recursiveDescription'”
 可见常规调用方法是不能调用私有API的，我下面将使用两种方式调用私有API，创建一个Class，实现公开方法和私有方法：
 ```objective-c
 //ExampleClass.h
