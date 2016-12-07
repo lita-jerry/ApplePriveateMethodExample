@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fa3-gW-GAV">
+                                <rect key="frame" x="8" y="258.5" width="359" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-n8-L43">
+                                        <rect key="frame" x="8" y="64.5" width="80" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdV-9g-FcG">
+                                        <rect key="frame" x="96" y="60" width="79.5" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SO3-bY-BQ9">
+                                        <rect key="frame" x="183.5" y="61" width="80" height="29"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-WW-8uV">
+                                        <rect key="frame" x="271.5" y="60" width="79.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="AdV-9g-FcG" firstAttribute="leading" secondItem="Tad-n8-L43" secondAttribute="trailing" constant="8" id="1fw-6j-uvf"/>
+                                    <constraint firstItem="AdV-9g-FcG" firstAttribute="centerY" secondItem="fa3-gW-GAV" secondAttribute="centerY" id="700-fy-nRu"/>
+                                    <constraint firstItem="Tad-n8-L43" firstAttribute="centerY" secondItem="fa3-gW-GAV" secondAttribute="centerY" id="Oth-gP-Vqd"/>
+                                    <constraint firstItem="SO3-bY-BQ9" firstAttribute="leading" secondItem="AdV-9g-FcG" secondAttribute="trailing" constant="8" id="Vah-tI-zoU"/>
+                                    <constraint firstItem="SO3-bY-BQ9" firstAttribute="centerY" secondItem="fa3-gW-GAV" secondAttribute="centerY" id="WHY-2q-dHw"/>
+                                    <constraint firstAttribute="trailing" secondItem="KEQ-WW-8uV" secondAttribute="trailing" constant="8" id="eL0-2L-vmb"/>
+                                    <constraint firstItem="KEQ-WW-8uV" firstAttribute="leading" secondItem="SO3-bY-BQ9" secondAttribute="trailing" constant="8" id="eqW-5i-xzv"/>
+                                    <constraint firstAttribute="height" constant="150" id="gv3-oM-e1t"/>
+                                    <constraint firstItem="KEQ-WW-8uV" firstAttribute="width" secondItem="Tad-n8-L43" secondAttribute="width" id="iZl-zU-DIp"/>
+                                    <constraint firstItem="Tad-n8-L43" firstAttribute="leading" secondItem="fa3-gW-GAV" secondAttribute="leading" constant="8" id="lnL-Cr-fVf"/>
+                                    <constraint firstItem="AdV-9g-FcG" firstAttribute="width" secondItem="Tad-n8-L43" secondAttribute="width" id="sLm-ux-YPr"/>
+                                    <constraint firstItem="SO3-bY-BQ9" firstAttribute="width" secondItem="Tad-n8-L43" secondAttribute="width" id="sMA-tl-0yt"/>
+                                    <constraint firstItem="KEQ-WW-8uV" firstAttribute="centerY" secondItem="fa3-gW-GAV" secondAttribute="centerY" id="wrR-He-PGm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fa3-gW-GAV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="dhI-hO-gVU"/>
+                            <constraint firstItem="fa3-gW-GAV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dqx-Jd-mmm"/>
+                            <constraint firstAttribute="trailing" secondItem="fa3-gW-GAV" secondAttribute="trailing" constant="8" id="g3o-A6-0oy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
