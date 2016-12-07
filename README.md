@@ -38,7 +38,7 @@ PS：一旦显示的使用这些私有API，将不能上架AppStore，今后有�
 @end
 ```
 这样即指向了该类的私有方法，变相的将私有方法“变”成了公开方法
-![代码参考Example01](https://github.com/JerryLoveRice/ApplePriveateMethodExample/blob/master/Source/Example1.png)
+![代码参考Example01](Source/Example1.png)
 代码参考Example01
 
 
@@ -54,11 +54,11 @@ if([ExampleClass respondsToSelector:@selector(privateMethod)]){
 	[ExampleClass performSelector:@selector(privateMethod)];
 }
 ```
-![代码参考Example02](https://github.com/JerryLoveRice/ApplePriveateMethodExample/blob/master/Source/Example1.png)
+![代码参考Example02](Source/Example1.png)
 代码参考Example02
 
 套用如上两种方法，实现**[UIView recursiveDescription]**
-![代码参考RecursiveDescriptionDemo](https://github.com/JerryLoveRice/ApplePriveateMethodExample/blob/master/Source/demo.png)
+![代码参考RecursiveDescriptionDemo](Source/demo.png)
 代码参考RecursiveDescriptionDemo
 
 ### 关于 @selector() 你需要知道的
